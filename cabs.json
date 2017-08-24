@@ -1,0 +1,21 @@
+{
+        "_id" : ObjectId("599ead62f35b52c68759a886"),
+        "driverId" : 1,
+        "status" : "free",
+        "latitude" : 20,
+        "longitude" : 22
+}
+{
+        "_id" : ObjectId("599ead6ff35b52c68759a887"),
+        "driverId" : 2,
+        "status" : "free",
+        "latitude" : 30,
+        "longitude" : 32
+}
+{
+        "_id" : ObjectId("599ead7ef35b52c68759a888"),
+        "driverId" : 3,
+        "status" : "free",
+        "latitude" : 40,
+        "longitude" : 42
+}

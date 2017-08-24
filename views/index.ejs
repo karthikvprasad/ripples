@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blueberry Taxi Service</title>
+</head>
+<body>
+  <div style="text-align: center"><h1 style="color: blue">BlueBerry Taxi Service</h1></div>
+
+  <strong>Book a taxi</strong>
+  <form action="/requestCar" method="POST">
+  <input type="number" placeholder="user id" name="userId" required>
+  <input type="number" placeholder="latitude" name="latitude" required>
+  <input type="number" placeholder="longitude" name="longitude" required></form>
+   Request Pink Taxi<input type="checkbox" name="isPink">
+  <button type="submit">Book Taxi</button>
+</form>
+</br><sub>*Costs 5 bitcoins extra per ride</sub>
+<h2>Trips</h2>
+<h3>Start Trip</h3>
+<table class="trips" border="1">
+<th>UserId</th>
+<th>Latitude</th>
+<th>Longitude</th>
+<th>Pink</th>
+<th>Start trip</th>
+  <% for(var i=0; i<trips.length; i++) {%>
+    <form action="/startTrip?userId=<%= trips[i].userId %>&driverId=<%= trips[i].driverId %>" method="POST">
+     <tr>
+     <td><%= trips[i].userId %></td>
+      <td><%= trips[i].latitude %></td>
+      <td><%= trips[i].longitude %></td>
+      <td><%= trips[i].isPink %></td>
+      <td><button type="submit">Start Trip</button></td>
+      
+      </tr>
+    </form>
+  <% } %>
+</table>
+<h3>Stop Trip</h3>
+<table class="trips" border="1">
+<th>UserId</th>
+<th>Latitude</th>
+<th>Longitude</th>
+<th>Pink</th>
+<th>Start time</th>
+<th>Stop trip</th>
+  <% for(var i=0; i<trips.length; i++) {%>
+    <form action="/stopTrip?userId=<%= trips[i].userId %>&driverId=<%= trips[i].driverId %>" method="POST">
+     <tr>
+     <td><%= trips[i].userId %></td>
+      <td><input type="number" name="latitude" value='<%= trips[i].latitude %>'><%= trips[i].latitude %></td>
+      <td><input type="number" name="longitude" value='<%= trips[i].longitude %>'><%= trips[i].longitude %></td>
+      <td><%= trips[i].isPink %></td>
+      <td><%= trips[i].startTime %></td>
+      <td><button type="submit">Stop Trip</button></td>
+      
+      </tr>
+    </form>
+  <% } %>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+{  
+        "_id" : ObjectId("599ea81ef35b52c68759a885"),
+        "userId" : "4", 
+        "latitude" : "3", 
+        "longitude" : "5", 
+        "isPink" : false, 
+        "startTime" : 1497791176.575 
+}
+{ 
+        "_id" : ObjectId("59465d7acd0caa17541cb628"), 
+        "userId" : "5", 
+        "latitude" : "2", 
+        "longitude" : "3", 
+        "isPink" : true 
+}
+{
+        "_id" : ObjectId("59465dca4326391ab4f4c62e"),
+        "userId" : "6",
+        "latitude" : "1",
+        "longitude" : "2",
+        "isPink" : false
+}
+{
+        "_id" : ObjectId("59465e14d9a5df128cf9c570"),
+        "userId" : "7",
+        "latitude" : "4",
+        "longitude" : "5",
+        "isPink" : false
+}
+{
+        "_id" : ObjectId("594669c1e253ac1c90bfdc03"),
+        "userId" : "8",
+        "latitude" : "3",
+        "longitude" : "7",
+        "isPink" : true
+}
+{
+        "_id" : ObjectId("5946480b2d4df11970dd4638"),
+        "userId" : "1",
+        "latitude" : "7",
+        "longitude" : "10",
+        "isPink" : true,
+        "stopTrip" : 1497792011.047
+}
+{
+        "_id" : ObjectId("59465127120d3210a4259dc1"),
+        "userId" : "2",
+        "latitude" : "3",
+        "longitude" : "8",
+        "isPink" : false,
+        "stopTrip" : 1497792037.428
+}
+{
+        "_id" : ObjectId("59465a6d5e73bd173c428484"),
+        "userId" : "3",
+        "latitude" : "2",
+        "longitude" : "6",
+        "isPink" : true,
+        "startTime" : 1497790607.779,
+        "stopTrip" : 1497790613.935
+}
